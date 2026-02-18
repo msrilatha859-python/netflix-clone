@@ -2,8 +2,8 @@ function Navbar() {
   return (
     <div className="d-flex justify-content-between nav mx-5">
       <img className="logo"
-        src="/netflix-logo-removebg-preview.png"
-        alt="netflix"
+        src="/movie-logo-removebg-preview.png"
+        alt="movie"
        
       />
 
