@@ -1,22 +1,29 @@
 function Navbar() {
   return (
-    <div className="d-flex justify-content-between nav mx-5">
-      <img className="logo"
-        src="/movie-logo-removebg-preview.png"
-        alt="movie"
-       
-      />
+    <div className="container-fluid px-3 px-md-5">
+      <div className="d-flex justify-content-between align-items-center nav py-3">
+        
+        <img
+          className="logo img-fluid"
+          src="/movie-logo-removebg-preview.png"
+          alt="movie"
+        />
 
-      <div className="d-flex align-items-center gap-3 fw-bold">
-        <div className="border px-1 py-1 rounded text-white">
-          <i className="bi bi-translate me-2"></i>
-          <select className="bg-transparent text-white border-0">
-            <option>English</option>
-            <option>Hindi</option>
-          </select>
+        <div className="d-flex align-items-center gap-2 gap-md-3 fw-bold">
+          
+          <div className="border px-2 py-1 rounded text-white d-flex align-items-center">
+            <i className="bi bi-translate me-1"></i>
+            <select className="bg-transparent text-white border-0 small-select">
+              <option>English</option>
+              <option>Hindi</option>
+            </select>
+          </div>
+
+          <button className="btn red text-white px-3 py-1">
+            Sign In
+          </button>
+
         </div>
-
-        <button className="btn red text-white">Sign in</button>
       </div>
     </div>
   );

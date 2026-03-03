@@ -1,24 +1,25 @@
 import './herosection.css'
+
 function Emailform() {
   return (
-    <div className="d-flex justify-content-center mt-4">
-      <form className="d-flex w-100 gap-2" style={{ maxWidth: "560px" }}>
+    <div className="d-flex justify-content-center mt-4 text-center mx-4">
+      <form className="email-form d-flex w-100 gap-2">
+        
         <input
           type="email"
-          className="form-control rounded-2 border-1"
+          className="form-control rounded-2 border"
           placeholder="Email address"
-          style={{ height: "60px" }}
           required
         />
 
         <button
           type="submit"
-          className="btn d-flex align-items-center rounded-2 px-4 flex-shrink-0 text-nowrap red text-white"
-          style={{ height: "60px", fontSize: "25px" }}
+          className="btn d-flex align-items-center justify-content-center rounded-2 px-4 text-nowrap red text-white"
         >
           Get Started
-          <span className="ms-2 fs-3">›</span>
+          <span className="ms-2">›</span>
         </button>
+
       </form>
     </div>
   );

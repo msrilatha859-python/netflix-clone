@@ -28,8 +28,8 @@ function MoreReasons() {
   ];
 
   return (
-    <section className=" bg-black text-white px-6 md:px-16">
-        <div className="container px-5">
+    <section className=" bg-black text-white md:px-16">
+        <div className="container px-4">
       <h4 className="fw-bold mb-5">
         More Reasons to <span className="text-red-600">Join</span>
       </h4>

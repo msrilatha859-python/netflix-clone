@@ -5,7 +5,7 @@ function Herosection(){
     return(
         <div className="banner">
             <Navbar />
-            <div className="justify-content-center align-items-center text-center p-5">
+            <div className="hero-content text-center">
             <h1 className="banner-heading p-5">
                 Unlimited movies,<br/> shows, and more
             </h1>

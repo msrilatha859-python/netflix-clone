@@ -26,8 +26,8 @@ function Movies(){
         <Swiper modules={[Navigation]} spaceBetween={15} navigation
         breakpoints={{
         320:{slidesPerview: 2},
-        576 : {slidesPerView : 3},
-        768 : {slidesPerView : 4},
+        576 : {slidesPerView : 2},
+        768 : {slidesPerView : 2},
         1024 : {slidesPerView : 4},
         1400 : {slidesPerView : 6},
         }}

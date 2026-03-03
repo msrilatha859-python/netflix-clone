@@ -25,14 +25,6 @@ function FAQ() {
       answer:
         "Netflix is flexible. There are no contracts and no commitments. You can easily cancel your account online.",
     },
-    {
-        question: "What can I watch on Netflix?",
-        answer: "Netflix has an extensive library of feature films, documentaries, shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.",
-    },
-    {
-        question: "Is Netflix good for kids?",
-        answer: "The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.",
-    },
   ];
 
   const toggleFAQ = (index) => {
@@ -40,43 +32,46 @@ function FAQ() {
   };
 
   return (
-    <section className="bg-black text-white py-16 md:px-16">
-        <div className="container px-5">
-      <h4 className="text-3xl md:text-5xl font-bold mb-5">
-        Frequently Asked Questions
-      </h4>
+    <section className="bg-black text-white py-5">
+      <div className="max-w-5xl mx-auto">
+        
+        <h4 className="fw-bold mb-5">
+          Frequently Asked Questions
+        </h4>
 
-      <div className="space-y-3">
-        {faqs.map((faq, index) => (
-          <div key={index} className="bg-zinc-800">
-            <button
-              onClick={() => toggleFAQ(index)}
-              className="w-full flex justify-between items-center 
-                         p-6 text-lg md:text-xl font-medium 
-                         hover:bg-zinc-900 transition" style={{fontSize:"24px"}}
-            >
-              {faq.question}
-              <FiPlus
-                className={`text-3xl transition-transform duration-300 ${
-                  activeIndex === index ? "rotate-45" : ""
+        <div className="space-y-3">
+          {faqs.map((faq, index) => (
+            <div key={index} className="bg-zinc-800 rounded">
+              
+              <button
+                onClick={() => toggleFAQ(index)}
+                className="w-full flex justify-between items-center 
+                           p-4 md:p-6 text-lg md:text-3xl 
+                           hover:bg-zinc-700 transition"
+              >
+                <span className="text-left">{faq.question}</span>
+
+                <FiPlus
+                  className={`text-2xl md:text-3xl transition-transform duration-300 ${
+                    activeIndex === index ? "rotate-45" : ""
+                  }`}
+                />
+              </button>
+
+              <div
+                className={`transition-all duration-300 overflow-hidden ${
+                  activeIndex === index ? "max-h-96 p-4 md:p-6" : "max-h-0"
                 }`}
-              />
-            </button>
+              >
+                <p className="text-zinc-300 text-sm md:text-base leading-relaxed">
+                  {faq.answer}
+                </p>
+              </div>
 
-            <div
-              className={`overflow-hidden transition-all duration-300 ${
-                activeIndex === index
-                  ? "max-h-40 p-6"
-                  : "max-h-0"
-              }`}
-            >
-              <p className="text-zinc-300 text-base leading-relaxed">
-                {faq.answer}
-              </p>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+
       </div>
     </section>
   );
