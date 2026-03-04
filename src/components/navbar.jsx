@@ -11,9 +11,9 @@ function Navbar() {
 
         <div className="d-flex align-items-center gap-2 gap-md-3 fw-bold">
           
-          <div className="border px-2 py-1 rounded text-white d-flex align-items-center">
+          <div className="border px-2 py-1 rounded d-flex align-items-center">
             <i className="bi bi-translate me-1"></i>
-            <select className="bg-transparent text-white border-0 small-select">
+            <select className="bg-transparent text-success border-0 small-select">
               <option>English</option>
               <option>Hindi</option>
             </select>
