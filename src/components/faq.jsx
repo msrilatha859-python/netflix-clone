@@ -32,7 +32,7 @@ function FAQ() {
   };
 
   return (
-    <section className="bg-black text-white py-5">
+    <section className="bg-black text-white py-5 px-4">
       <div className="max-w-5xl mx-auto">
         
         <h4 className="fw-bold mb-5">
